@@ -130,6 +130,9 @@ class PageController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image')->store('about', 'public');
             // dd($image);
+
+
+            
         }
         About::create([
             'image' => $image,
